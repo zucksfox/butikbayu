@@ -1,5 +1,5 @@
 export const CONTACT_INFO = {
-  whatsapp: '6281234567890', // Replace with your actual WhatsApp number
+  whatsapp: '6285641981628', // Replace with your actual WhatsApp number
   email: 'info@zoummode.com',
   instagram: '@zoummode',
   operationalHours: {
