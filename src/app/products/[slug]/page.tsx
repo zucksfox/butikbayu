@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeftIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 import { CONTACT_INFO } from '@/constants/contact';
+import { useState } from 'react';
 
 // Product data (in real app, this would come from an API or database)
 const products = [
@@ -76,6 +77,8 @@ const products = [
 export default function ProductDetail() {
   const params = useParams();
   const product = products.find((p) => p.slug === params.slug);
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
 
   if (!product) {
     return (
@@ -86,7 +89,11 @@ export default function ProductDetail() {
   }
 
   const handleWhatsAppOrder = () => {
-    const message = `Halo, saya tertarik dengan produk ${product.name} (${product.price}). Apakah masih tersedia?`;
+    if (!selectedSize || !selectedColor) {
+      alert('Silakan pilih ukuran dan warna terlebih dahulu.');
+      return;
+    }
+    const message = `Halo, saya tertarik dengan produk ${product.name} (Ukuran: ${selectedSize}, Warna: ${selectedColor}, Harga: ${product.price}). Apakah masih tersedia?`;
     const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -142,29 +149,43 @@ export default function ProductDetail() {
                 </div>
                 
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Ukuran Tersedia</h3>
-                  <div className="flex gap-2">
+                  <h3 className="font-semibold text-gray-900 mb-2">Pilih Ukuran</h3>
+                  <div className="flex flex-wrap gap-2">
                     {product.details.sizes.map((size) => (
-                      <span
+                      <button
                         key={size}
-                        className="px-3 py-1 border border-gray-300 rounded-md text-sm"
+                        onClick={() => setSelectedSize(size)}
+                        className={`px-4 py-2 border rounded-md text-sm font-medium transition-colors ${
+                          selectedSize === size
+                            ? 'bg-primary text-white border-primary'
+                            : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+                        }`}
                       >
                         {size}
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Warna Tersedia</h3>
-                  <div className="flex gap-2">
+                  <h3 className="font-semibold text-gray-900 mb-2">Pilih Warna</h3>
+                  <div className="flex flex-wrap gap-3">
                     {product.details.colors.map((color) => (
-                      <span
+                      <button
                         key={color}
-                        className="px-3 py-1 border border-gray-300 rounded-md text-sm"
+                        onClick={() => setSelectedColor(color)}
+                        className={`flex items-center gap-2 px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
+                          selectedColor === color
+                            ? 'bg-primary text-white border-primary'
+                            : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+                        }`}
                       >
+                        <span 
+                          className="h-5 w-5 rounded-full border border-gray-300"
+                          style={{ backgroundColor: color.toLowerCase() }}
+                        />
                         {color}
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>
