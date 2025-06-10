@@ -11,7 +11,7 @@ import { useState } from 'react';
 const products = [
   {
     id: 1,
-    name: 'Elegant Evening Dress',
+    name: 'Kebaya Hijau Lengan Panjang',
     price: 'Rp 1.299.000',
     image: '/images/butik1.png',
     slug: 'elegant-evening-dress',
@@ -32,7 +32,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Classic Black Blazer',
+    name: 'Kebaya Classic',
     price: 'Rp 899.000',
     image: '/images/butik2.png',
     slug: 'classic-blazer',
@@ -53,7 +53,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Designer Leather Handbag',
+    name: 'Kebaya Full Body',
     price: 'Rp 2.499.000',
     image: '/images/butik3.png',
     slug: 'designer-handbag',
