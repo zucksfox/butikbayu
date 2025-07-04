@@ -130,6 +130,72 @@ const products = [
       ]
     }
   },
+  {
+    id: 7,
+    name: 'Kebaya Classic',
+    price: 'Rp 899.000',
+    image: '/images/butik2.png',
+    slug: 'classic-blazer',
+    discount: null,
+    description: 'Timeless professional wear',
+    details: {
+      description: 'Kebaya classic dengan desain timeless yang cocok untuk berbagai acara formal. Dibuat dengan bahan berkualitas tinggi dan potongan yang elegan.',
+      material: 'Katun Premium',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Hitam', 'Navy', 'Abu-abu'],
+      features: [
+        'Desain timeless',
+        'Bahan katun premium',
+        'Potongan elegan',
+        'Cocok untuk acara formal',
+        'Nyaman digunakan',
+      ]
+    }
+  },
+  {
+    id: 8,
+    name: 'Kebaya Hijau Lengan Panjang',
+    price: 'Rp 1.299.000',
+    image: '/images/butik1.png',
+    slug: 'elegant-evening-dress',
+    discount: '15% OFF',
+    description: 'Perfect for special occasions',
+    details: {
+      description: 'Kebaya hijau dengan lengan panjang yang elegan, cocok untuk acara spesial dan formal. Desain yang memukau dengan detail bordir halus.',
+      material: 'Sutra Premium',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Hijau', 'Biru', 'Merah'],
+      features: [
+        'Lengan panjang elegan',
+        'Bahan sutra premium',
+        'Detail bordir halus',
+        'Cocok untuk acara spesial',
+        'Desain memukau',
+      ]
+    }
+  },
+  {
+    id: 9,
+    name: 'Kebaya Full Body',
+    price: 'Rp 2.499.000',
+    image: '/images/butik3.png',
+    slug: 'designer-handbag',
+    discount: '20% OFF',
+    description: 'Luxury leather craftsmanship',
+    details: {
+      description: 'Kebaya full body dengan desain mewah dan eksklusif. Dibuat dengan craftsmanship terbaik dan bahan berkualitas tinggi untuk tampilan yang sempurna.',
+      material: 'Brocade Premium',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Emas', 'Perak', 'Burgundy'],
+      features: [
+        'Desain full body mewah',
+        'Bahan brocade premium',
+        'Craftsmanship terbaik',
+        'Tampilan eksklusif',
+        'Cocok untuk acara mewah',
+      ]
+    }
+  },
 ];
 
 export default function ProductDetail() {
