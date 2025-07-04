@@ -11,64 +11,122 @@ import { useState } from 'react';
 const products = [
   {
     id: 1,
-    name: 'Kebaya Hijau Lengan Panjang',
-    price: 'Rp 1.299.000',
-    image: '/images/butik1.png',
-    slug: 'elegant-evening-dress',
-    discount: '15% OFF',
-    description: 'Perfect for special occasions',
+    name: 'Gaun Malam Elegan',
+    price: 'Rp 1.200.000',
+    image: '/images/gaun-malam.jpg',
+    slug: 'gaun-malam-elegan',
+    discount: '10% OFF',
+    description: 'Gaun malam premium untuk acara spesial',
     details: {
-      description: 'Anggun dan elegan, gaun malam ini dirancang khusus untuk momen spesial Anda. Dibuat dengan bahan berkualitas tinggi dan detail yang memukau.',
-      material: 'Premium Silk Blend',
+      description: 'Anggun dan elegan, gaun malam ini dirancang khusus untuk momen spesial Anda. Dibuat dengan bahan silk premium dan detail payet mewah.',
+      material: 'Silk Premium',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Black', 'Navy', 'Burgundy'],
+      colors: ['Navy', 'Merah', 'Hitam'],
       features: [
-        'Bahan premium berkualitas tinggi',
+        'Bahan silk premium',
         'Detail payet mewah',
-        'Desain slim fit yang anggun',
+        'Desain slim fit',
         'Nyaman digunakan',
       ]
     }
   },
   {
     id: 2,
-    name: 'Kebaya Classic',
-    price: 'Rp 899.000',
-    image: '/images/butik2.png',
-    slug: 'classic-blazer',
+    name: 'Blouse Satin Premium',
+    price: 'Rp 750.000',
+    image: '/images/blouse-satin.jpg',
+    slug: 'blouse-satin-premium',
     discount: null,
-    description: 'Timeless professional wear',
+    description: 'Blouse satin modern dan elegan',
     details: {
-      description: 'Blazer klasik yang sempurna untuk tampilan profesional Anda. Potongan yang presisi dan bahan berkualitas menjadikannya pilihan sempurna untuk berbagai kesempatan.',
-      material: 'Premium Wool Blend',
-      sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Black', 'Navy', 'Grey'],
+      description: 'Blouse satin dengan potongan modern, cocok untuk tampilan formal maupun kasual. Bahan lembut dan nyaman.',
+      material: 'Satin Premium',
+      sizes: ['S', 'M', 'L'],
+      colors: ['Putih', 'Pink', 'Biru'],
       features: [
-        'Bahan wool blend premium',
-        'Fully lined interior',
-        'Perfect fit design',
-        'Multi-functional pockets',
+        'Bahan satin lembut',
+        'Desain modern',
+        'Cocok untuk berbagai acara',
       ]
     }
   },
   {
     id: 3,
-    name: 'Kebaya Full Body',
-    price: 'Rp 2.499.000',
-    image: '/images/butik3.png',
-    slug: 'designer-handbag',
-    discount: '20% OFF',
-    description: 'Luxury leather craftsmanship',
+    name: 'Rok Tutu Mewah',
+    price: 'Rp 950.000',
+    image: '/images/rok-tutu.jpg',
+    slug: 'rok-tutu-mewah',
+    discount: '5% OFF',
+    description: 'Rok tutu dengan layer mewah',
     details: {
-      description: 'Tas tangan mewah yang menggabungkan gaya klasik dengan sentuhan modern. Dibuat dengan kulit asli berkualitas tinggi dan detail finishing yang sempurna.',
-      material: 'Genuine Leather',
-      sizes: ['One Size'],
-      colors: ['Black', 'Brown', 'Tan'],
+      description: 'Rok tutu dengan banyak layer, memberikan volume dan kesan mewah. Cocok untuk pesta atau acara spesial.',
+      material: 'Tulle Premium',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Putih', 'Cream', 'Pink'],
       features: [
-        'Genuine leather premium',
-        'Hardware gold-plated',
-        'Multiple compartments',
-        'Adjustable strap',
+        'Layer tulle premium',
+        'Pinggang elastis',
+        'Ringan dan nyaman',
+      ]
+    }
+  },
+  {
+    id: 4,
+    name: 'Setelan Jas Wanita',
+    price: 'Rp 1.500.000',
+    image: '/images/setelan-jas.jpg',
+    slug: 'setelan-jas-wanita',
+    discount: null,
+    description: 'Setelan jas wanita elegan',
+    details: {
+      description: 'Setelan jas dengan potongan tailored, cocok untuk tampilan profesional dan elegan.',
+      material: 'Wool Blend',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Hitam', 'Abu', 'Navy'],
+      features: [
+        'Potongan tailored',
+        'Bahan wool blend',
+        'Nyaman dan stylish',
+      ]
+    }
+  },
+  {
+    id: 5,
+    name: 'Dress Batik Modern',
+    price: 'Rp 1.100.000',
+    image: '/images/dress-batik.jpg',
+    slug: 'dress-batik-modern',
+    discount: '8% OFF',
+    description: 'Dress batik dengan sentuhan modern',
+    details: {
+      description: 'Dress batik dengan motif eksklusif dan desain modern. Cocok untuk acara formal maupun santai.',
+      material: 'Katun Batik',
+      sizes: ['S', 'M', 'L'],
+      colors: ['Biru', 'Coklat', 'Merah'],
+      features: [
+        'Motif batik eksklusif',
+        'Desain modern',
+        'Bahan katun nyaman',
+      ]
+    }
+  },
+  {
+    id: 6,
+    name: 'Kebaya Brokat Eksklusif',
+    price: 'Rp 2.500.000',
+    image: '/images/kebaya-brokat.jpg',
+    slug: 'kebaya-brokat-eksklusif',
+    discount: '12% OFF',
+    description: 'Kebaya brokat mewah dan eksklusif',
+    details: {
+      description: 'Kebaya brokat dengan detail bordir halus dan desain eksklusif. Pilihan tepat untuk acara spesial.',
+      material: 'Brokat Premium',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Emas', 'Hijau', 'Merah'],
+      features: [
+        'Brokat premium',
+        'Bordir halus',
+        'Desain eksklusif',
       ]
     }
   },

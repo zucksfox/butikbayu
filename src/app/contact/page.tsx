@@ -10,11 +10,11 @@ export default function Contact() {
           <p className="text-lg text-gray-700 mb-10">Kami siap membantu Anda! Silakan hubungi kami melalui salah satu platform berikut:</p>
           <div className="flex flex-col gap-8 items-center">
             <a
-              href="https://instagram.com/zoummode" target="_blank" rel="noopener noreferrer"
+              href="https://instagram.com/zoum_mode" target="_blank" rel="noopener noreferrer"
               className="w-full flex items-center gap-4 bg-gradient-to-r from-pink-500 to-yellow-400 text-white px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
             >
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="currentColor"/><path fill="#fff" d="M12 8.4A3.6 3.6 0 1 0 12 15.6 3.6 3.6 0 0 0 12 8.4Zm0 5.9A2.3 2.3 0 1 1 12 9.7a2.3 2.3 0 0 1 0 4.6Zm4.5-6.1a.84.84 0 1 1-1.68 0 .84.84 0 0 1 1.68 0ZM17.7 8.6a5.7 5.7 0 0 0-1.5-2.1A5.7 5.7 0 0 0 14.4 5.3c-.6-.2-1.2-.3-2.4-.3s-1.8.1-2.4.3a5.7 5.7 0 0 0-1.8 1.2A5.7 5.7 0 0 0 6.3 8.6c-.2.6-.3 1.2-.3 2.4s.1 1.8.3 2.4a5.7 5.7 0 0 0 1.2 1.8 5.7 5.7 0 0 0 1.8 1.2c.6.2 1.2.3 2.4.3s1.8-.1 2.4-.3a5.7 5.7 0 0 0 1.8-1.2 5.7 5.7 0 0 0 1.2-1.8c.2-.6.3-1.2.3-2.4s-.1-1.8-.3-2.4Zm-1.1 5.7a4.1 4.1 0 0 1-1.1 1.7 4.1 4.1 0 0 1-1.7 1.1c-.5.2-1.1.3-2.2.3s-1.7-.1-2.2-.3a4.1 4.1 0 0 1-1.7-1.1 4.1 4.1 0 0 1-1.1-1.7c-.2-.5-.3-1.1-.3-2.2s.1-1.7.3-2.2a4.1 4.1 0 0 1 1.1-1.7 4.1 4.1 0 0 1 1.7-1.1c.5-.2 1.1-.3 2.2-.3s1.7.1 2.2.3a4.1 4.1 0 0 1 1.7 1.1 4.1 4.1 0 0 1 1.1 1.7c.2.5.3 1.1.3 2.2s-.1 1.7-.3 2.2Z"/></svg>
-              <span className="text-lg font-semibold">@zoummode</span>
+              <span className="text-lg font-semibold">@zoum_mode</span>
             </a>
             <a
               href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
