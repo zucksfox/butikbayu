@@ -120,14 +120,14 @@ export default function Home() {
             <p className="text-lg text-gray-700 mb-10">Kami siap membantu Anda! Silakan hubungi kami melalui salah satu platform berikut:</p>
             <div className="flex flex-col gap-8 items-center">
               <a
-                href="https://instagram.com/zoummode" target="_blank" rel="noopener noreferrer"
+                href="https://instagram.com/zoum_mode" target="_blank" rel="noopener noreferrer"
                 className="w-full flex items-center gap-4 bg-gradient-to-r from-pink-500 to-yellow-400 text-white px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
               >
                 <img src="/images/insta.png" alt="Instagram" className="w-8 h-8 rounded-full object-cover bg-white/80" />
                 <span className="text-lg font-semibold">@zoummode</span>
               </a>
               <a
-                href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                href="https://wa.me/6285641981628" target="_blank" rel="noopener noreferrer"
                 className="w-full flex items-center gap-4 bg-green-500 text-white px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
               >
                 <img src="/images/whatsapp.png" alt="WhatsApp" className="w-8 h-8 rounded-full object-cover bg-white/80" />
